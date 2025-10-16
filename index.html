@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madras Masala Chatbot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="module" src="index.tsx"></script>
+    <style>
+      :root {
+        --background-color: #282c34;
+        --user-bubble-color: #ff9900;
+        --bot-bubble-color: #4a4f59;
+        --text-color: #ffffff;
+        --input-bg-color: #3a3f47;
+        --font-family: 'Roboto', sans-serif;
+      }
+      body {
+        margin: 0;
+        font-family: var(--font-family);
+        background-color: var(--background-color);
+        color: var(--text-color);
+        overscroll-behavior-y: contain;
+      }
+      #root {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
